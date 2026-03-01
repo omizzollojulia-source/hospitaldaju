@@ -5,24 +5,27 @@
 <script defer src="script.js"></script>
 </head>
 <body>
+<div class="timer-fixed">⏱ <span id="timerGlobal">0:00</span></div>
+
 <header>🩺 Triagem e Internação</header>
+
 <nav>
 <a href="index.html">Painel</a>
 <a href="triagem.html">Triagem</a>
 <a href="criticos.html">UTI</a>
-<a href="plantoes.html">Plantões</a>
+<a href="acompanhamento.html">Acompanhamento</a>
+<a href="exames.html">Exames</a>
+<a href="plantoes.html">Relatórios</a>
 </nav>
 
 <div class="container">
-<div class="card">
-<input id="nomeMateria" placeholder="Nome da matéria">
-<button onclick="addMateria('triagem')">Triagem</button>
-<button onclick="addMateria('internacao')">Internação</button>
-</div>
 
-<div class="card">
+<input id="nomeMateria" placeholder="Nome da matéria">
+<button onclick="adicionarMateria('triagem')">Triagem</button>
+<button onclick="adicionarMateria('internacao')">Internação</button>
+
 <div id="listaMaterias"></div>
-</div>
+
 </div>
 </body>
 </html>
