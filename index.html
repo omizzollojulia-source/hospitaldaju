@@ -25,11 +25,14 @@
 <h2>🩺 Centro de Procedimentos</h2>
 
 <select id="procedimento">
-<option>Centro Cirúrgico</option>
-<option>Atendimento Clínico</option>
-<option>Diagnóstico por Imagem</option>
-<option>Plantão de Emergência</option>
+  <option value="">Selecione o procedimento</option>
+  <option value="centro-cirurgico">Centro Cirúrgico</option>
+  <option value="atendimento">Atendimento Clínico</option>
+  <option value="emergencia">Emergência</option>
+  <option value="diagnostico">Diagnóstico</option>
 </select>
+
+<div id="ambienteTexto" class="ambiente-info"></div>
 
 <input type="number" id="duracao" placeholder="Minutos de foco">
 <input type="text" id="materiaPlantao" placeholder="Matéria">
