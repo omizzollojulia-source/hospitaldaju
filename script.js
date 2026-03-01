@@ -199,6 +199,38 @@ function renderRanking(){
     ⏳ Total de Horas: ${horas.toFixed(1)}h`;
 }
 
+const procedimentoSelect = document.getElementById("procedimento");
+const ambienteTexto = document.getElementById("ambienteTexto");
+
+procedimentoSelect.addEventListener("change", function() {
+  document.body.classList.remove(
+    "centro-cirurgico",
+    "atendimento",
+    "emergencia",
+    "diagnostico"
+  );
+
+  const valor = this.value;
+
+  if (valor) {
+    document.body.classList.add(valor);
+
+    let mensagem = "";
+
+    if (valor === "centro-cirurgico") {
+      mensagem = "Você está no Centro Cirúrgico. Precisão máxima.";
+    } else if (valor === "atendimento") {
+      mensagem = "Você está na Sala de Atendimento Clínico.";
+    } else if (valor === "emergencia") {
+      mensagem = "Você está na Emergência. Foco total.";
+    } else if (valor === "diagnostico") {
+      mensagem = "Você está no Laboratório de Diagnóstico.";
+    }
+
+    ambienteTexto.innerText = mensagem;
+  }
+});
+
 // ================= INIT =================
 renderMaterias();
 renderAcompanhamento();
