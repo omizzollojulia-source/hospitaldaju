@@ -5,24 +5,27 @@
 <script defer src="script.js"></script>
 </head>
 <body>
+<div class="timer-fixed">⏱ <span id="timerGlobal">0:00</span></div>
+
 <header>🚨 UTI e Sala Vermelha</header>
+
 <nav>
 <a href="index.html">Painel</a>
 <a href="triagem.html">Triagem</a>
 <a href="criticos.html">UTI</a>
-<a href="plantoes.html">Plantões</a>
+<a href="acompanhamento.html">Acompanhamento</a>
+<a href="exames.html">Exames</a>
+<a href="plantoes.html">Relatórios</a>
 </nav>
 
 <div class="container">
-<div class="card">
-<input id="nomeMateria" placeholder="Nome da matéria">
-<button onclick="addMateria('vermelha')">Sala Vermelha</button>
-<button onclick="addMateria('uti')">UTI</button>
-</div>
 
-<div class="card">
+<input id="nomeMateria" placeholder="Nome da matéria">
+<button onclick="adicionarMateria('vermelha')">Sala Vermelha</button>
+<button onclick="adicionarMateria('uti')">UTI</button>
+
 <div id="listaMaterias"></div>
-</div>
+
 </div>
 </body>
 </html>
