@@ -14,3 +14,33 @@ input,select{padding:8px;margin:5px;}
 .grave{background:#f44336;}
 .critico{background:#b71c1c;}
 .alerta{background:#ffebee;padding:10px;border-left:5px solid red;margin-bottom:10px;}
+
+body {
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+.centro-cirurgico {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.atendimento {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #004d40;
+}
+
+.emergencia {
+  background: linear-gradient(135deg, #3a0000, #8b0000);
+  color: white;
+}
+
+.diagnostico {
+  background: linear-gradient(135deg, #f3e5f5, #ce93d8);
+  color: #4a148c;
+}
+
+.ambiente-info {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
