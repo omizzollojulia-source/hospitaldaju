@@ -5,26 +5,54 @@
 <script defer src="script.js"></script>
 </head>
 <body>
+
+<div class="timer-fixed">⏱ <span id="timerGlobal">0:00</span></div>
+
 <header>🏥 Hospital Universitário Dra. Ju</header>
+
 <nav>
 <a href="index.html">Painel</a>
 <a href="triagem.html">Triagem</a>
 <a href="criticos.html">UTI</a>
-<a href="plantoes.html">Plantões</a>
+<a href="acompanhamento.html">Acompanhamento</a>
+<a href="exames.html">Exames</a>
+<a href="plantoes.html">Relatórios</a>
 </nav>
 
 <div class="container">
+
 <div class="card">
-<h2>⏱️ Plantão</h2>
-<div id="timer" class="timer">25:00</div>
-<button onclick="startPlantao()">Iniciar</button>
-<button onclick="resetPlantao()">Resetar</button>
+<h2>🩺 Centro de Procedimentos</h2>
+
+<select id="procedimento">
+<option>Centro Cirúrgico</option>
+<option>Atendimento Clínico</option>
+<option>Diagnóstico por Imagem</option>
+<option>Plantão de Emergência</option>
+</select>
+
+<input type="number" id="duracao" placeholder="Minutos de foco">
+<input type="text" id="materiaPlantao" placeholder="Matéria">
+
+<button onclick="iniciarProcedimento()">Iniciar</button>
+<button onclick="emergencia()">🚨 Código Azul</button>
 </div>
 
 <div class="card">
 <h2>📊 Painel Geral</h2>
 <div id="listaMaterias"></div>
 </div>
+
+<div class="card">
+<h2>📈 Projeção até o EXATO</h2>
+<div id="projecao"></div>
+</div>
+
+<div class="card">
+<h2>🏆 Ranking</h2>
+<div id="ranking"></div>
+</div>
+
 </div>
 </body>
 </html>
