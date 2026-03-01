@@ -20,8 +20,8 @@ body {
 }
 
 .centro-cirurgico {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: linear-gradient(135deg, #dbe9f4, #bcdff1, #a5d3eb);
+  color: #000000; /* preto */
 }
 
 .atendimento {
@@ -30,8 +30,8 @@ body {
 }
 
 .emergencia {
-  background: linear-gradient(135deg, #3a0000, #8b0000);
-  color: white;
+  background: linear-gradient(135deg, #5c0000, #8b0000);
+  color: #4a0000; /* vinho escuro */
 }
 
 .diagnostico {
